@@ -3,7 +3,6 @@ import Cards from './components/Cards.jsx';
 import Footer from './components/Footer.jsx';
 import Header from './components/Header.jsx';
 import Filters from './components/Filters.jsx';
-import Modal from './components/Modal.jsx';
 import { DotPattern } from './components/dot-pattern';
 
 export default function App() {
@@ -11,63 +10,31 @@ export default function App() {
   const [filter, setFilter] = useState('All Challenges');
   const [cardData, setCardData] = useState([]);
   const [filteredCardData, setFilteredCardData] = useState([]);
-  const [modalOpen, setModalOpen] = useState(false);
-  const [modalCardId, setModalCardId] = useState(null);
-  const [modalCurrentTitle, setModalCurrentTitle] = useState('');
 
-  // Charger les données depuis localStorage ou fichier JSON
+  // Charge les données depuis le fichier JSON
   useEffect(() => {
-    const storedCardData = localStorage.getItem('cardData');
-    if (storedCardData) {
-      setCardData(JSON.parse(storedCardData)); // Charger depuis localStorage
-    } else {
-      fetch("cardData.json")
-        .then(response => response.json())
-        .then(data => {
-          const cardData = data.cardData;
-          setCardData(cardData); // Enregistrer toutes les données
-        })
-        .catch(error => console.log(error));
-    }
+    fetch("cardData.json")
+      .then(response => response.json())
+      .then(data => {
+        setCardData(data.cardData); // Charge toutes les données
+        setFilteredCardData(data.cardData); // Applique les données initiales pour l'affichage
+      })
+      .catch(error => console.log(error));
   }, []);
 
-  // Appliquer les filtres et la recherche
+  // Applique les filtres et la recherche
   useEffect(() => {
     const filtered = cardData.filter(card => {
-      if (!card.title) return false; // Assurez-vous qu'il y a un titre pour la carte
-      const matchesSearch = card.title.toLowerCase().includes(searchQuery.toLowerCase()); // Comparaison avec searchQuery
+      if (!card.title) return false; 
+      const matchesSearch = card.title.toLowerCase().includes(searchQuery.toLowerCase()); 
       const matchesFilter =
         filter === 'All Challenges' ||
         (filter === 'Premium' && card.premium) ||
         (filter === 'Free' && !card.premium);
       return matchesSearch && matchesFilter;
     });
-    setFilteredCardData(filtered); // Mettre à jour les cartes filtrées
-  }, [searchQuery, filter, cardData]); // Trigger quand `searchQuery`, `filter` ou `cardData` changent
-  
-  // Fonction pour mettre à jour le titre et sauvegarder dans localStorage
-  const updateTitle = (id, newTitle) => {
-    const updatedCardData = cardData.map((card) =>
-      card.id === id ? { ...card, title: newTitle } : card
-    );
-    setCardData(updatedCardData); // Met à jour l'état local
-    setFilteredCardData(updatedCardData); // Met à jour les cartes filtrées aussi
-    localStorage.setItem('cardData', JSON.stringify(updatedCardData)); // Sauvegarde dans localStorage
-  };
-
-  // Ouvrir le modal pour une carte spécifique
-  const openModal = (cardId, currentTitle) => {
-    setModalCardId(cardId);
-    setModalCurrentTitle(currentTitle);
-    setModalOpen(true);
-  };
-
-  // Fermer le modal
-  const closeModal = () => {
-    setModalOpen(false);
-    setModalCardId(null);
-    setModalCurrentTitle('');
-  };
+    setFilteredCardData(filtered); // Maj des cartes filtrées
+  }, [searchQuery, filter, cardData]); // Réagi aux changements de `searchQuery`, `filter` ou `cardData`
 
   return (
     <>
@@ -104,8 +71,6 @@ export default function App() {
                   buttonText={card.buttonText}
                   premium={card.premium}
                   free={card.free}
-                  updateTitle={updateTitle}  // Fonction pour mettre à jour le titre
-                  openModal={openModal}  // Ouvre le modal
                 />
               ))}
             </div>
@@ -113,17 +78,6 @@ export default function App() {
           <Footer />
         </div>
       </div>
-
-      {/* Modal */}
-      {modalOpen && (
-        <Modal
-          isOpen={modalOpen}
-          closeModal={closeModal}
-          updateTitle={updateTitle}
-          currentTitle={modalCurrentTitle}
-          id={modalCardId}
-        />
-      )}
     </>
   );
 }

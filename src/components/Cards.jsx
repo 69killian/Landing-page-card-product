@@ -27,16 +27,13 @@ const Cards = ({ cardId, cardImage, cardImageAlt, title, description, buttonText
     }
   };
 
+
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  // Fonction pour mettre à jour le titre
-  const updateCardTitle = (newTitle) => {
-    updateTitle(cardId, newTitle); // Appel de la fonction pour mettre à jour le titre
-    setLocalTitle(newTitle);  // Mise à jour locale du titre pour cette carte
-  };
+
 
   return (
     <>
@@ -88,7 +85,6 @@ const Cards = ({ cardId, cardImage, cardImageAlt, title, description, buttonText
           >
             <Tooltip
               closeTooltip={() => setIsTooltipVisible(false)}
-              updateTitle={updateCardTitle}
               cardId={cardId}
               currentTitle={localTitle}
               openModal={() => openModal(cardId, localTitle)}  // Ouvre le modal
