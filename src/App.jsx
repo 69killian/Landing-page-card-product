@@ -38,18 +38,12 @@ export default function App() {
 
   return (
     <>
-      <DotPattern
-        width={20}
-        height={20}
-        cx={8}
-        cy={8}
-        cr={4}
-        className="absolute top-0 left-0 w-full h-full z-0" 
-      />
-
+    <div className='flex justify-center'>
+<Header />
+</div>
       <div className="App flex justify-center items-center">
         <div className="relative overflow-hidden pb-[150px]">
-          <Header />
+          
           <Filters 
             setSearchQuery={setSearchQuery}
             setFilter={setFilter}

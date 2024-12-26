@@ -1,32 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import HeaderCards from './HeaderCards';
 
 const Header = () => {
-  const text = 'Product Selection';
-  const [letters, setLetters] = useState([]);
-
-  // Séparer le texte en lettres tout en conservant les espaces
-  useEffect(() => {
-    setLetters(
-      text.split('').map((char) => (char === ' ' ? '\u00A0' : char)) // Remplacer les espaces par des espaces insécables
-    );
-  }, [text]);
-
   return (
-    <div className="flex items-center justify-center ">
-      <header className="text-black font-inter text-4xl font-semibold flex ">
-        {letters.map((letter, index) => (
-          <span
-            key={index}
-            className="inline-block opacity-0 animate-fade-in"
-            style={{
-              animationDelay: `${Math.random() * 500}ms`, // Délai aléatoire pour chaque lettre
-            }}
-          >
-            {letter}
-          </span>
-        ))}
-      </header>
-    </div>
+    <>
+      <div className='bg-[#FAFAFA] relative top-[-41px] w-[1486px] h-[431px] border rounded-b-[24px] overflow-hidden'><HeaderCards/></div>
+      
+    </>
   );
 };
 

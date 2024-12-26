@@ -58,6 +58,36 @@
       "buttonText": "Start Challenge",
       "premium": false,
       "free": true
-    }
+    },
+    {
+      "id": 7,
+    "cardImage": "./Frame2.svg",
+    "cardImageAlt": "Raycast Wallpaper #7",
+   "title": "Raycast Wallpaper #7",
+    "description": "Recreate this wallpaper using AI.",
+    "buttonText": "Start Challenge",
+    "premium": true,
+    "free": false
+  },
+  {
+      "id": 8,
+    "cardImage": "./Frame2.svg",
+    "cardImageAlt": "Raycast Wallpaper #8",
+    "title": "Raycast Wallpaper #8",
+    "description": "Recreate this wallpaper using AI.",
+    "buttonText": "Start Challenge",
+    "premium": false,
+    "free": true
+  },
+  {
+      "id": 9,
+    "cardImage": "./Frame2.svg",
+    "cardImageAlt": "Raycast Wallpaper #9",
+    "title": "Raycast Wallpaper #9",
+    "description": "Recreate this wallpaper using AI.",
+    "buttonText": "Start Challenge",
+    "premium": false,
+    "free": true
+  }
   ]
 }
