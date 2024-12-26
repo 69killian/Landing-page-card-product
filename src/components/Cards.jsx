@@ -61,13 +61,13 @@ const Cards = ({ cardId, cardImage, cardImageAlt, title, description, buttonText
           <p className="text-[12.28px] font-normal text-[#090C1580]">{description}</p>
 
           <div className="flex flex-cols-2 justify-between items-center mt-auto relative">
-            <button className="font-inter font-medium text-[14.78px] flex items-center justify-center gap-2 border border-solid rounded-[9.83px] w-[127px] h-[35px] relative bg-white">
+            <button className="font-inter font-100 text-[14.78px] flex items-center justify-center gap-2 border border-solid rounded-[9.83px] w-[127px] h-[35px] relative bg-white">
               <img src={download} alt="download" />
               Télécharger
             </button>
 
             <button
-              className="points-button flex items-center justify-center border border-solid rounded-[9.83px] w-[36px] h-[36px] relative bg-white ease-in-out hover:shadow-[2px_2px_0px_rgba(0,0,0,0.2)] focus:outline focus:outline-2 focus:outline-offset-2"
+              className="points-button flex items-center justify-center border border-solid rounded-[12px] w-[36px] h-[36px] relative bg-white ease-in-out shadow-[inset_0px_-1px_1px_rgba(0,0,0,0.1)] focus:outline focus:outline-2 focus:outline-offset-2"
               onClick={handleTooltipToggle} // Bascule le tooltip
             >
               <img src={points} alt="points" />

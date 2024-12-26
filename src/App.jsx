@@ -46,7 +46,7 @@ export default function App() {
       </div>
 
       <div className="App flex justify-center items-center">
-        <div className="relative overflow-hidden pb-[150px]">
+        <div className="relative overflow-hidden pb-[150px] px-10">
           <Filters setSearchQuery={setSearchQuery} setFilter={setFilter} />
           {filteredCardData.length === 0 ? (
             <div className="text-center mt-20 mb-20 text-[40px]">
