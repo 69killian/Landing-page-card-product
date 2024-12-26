@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeaderCards = () => {
   return (
-    <div className="relative grid gap-[10px] ml-[-100px] mr-[-100px] top-[-36px]">
+    <div className="z-0 relative grid gap-[10px] ml-[-100px] mr-[-100px] top-[-36px]">
       {/* Première ligne de 7 cartes */}
       <div className="grid grid-cols-7 gap-[10px]">
         {Array(7)
