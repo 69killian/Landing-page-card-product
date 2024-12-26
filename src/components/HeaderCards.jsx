@@ -10,7 +10,7 @@ const HeaderCards = () => {
           .map((_, index) => (
             <div
               key={`row1-card${index}`}
-              className="bg-[#E6E6E61A] min-w-[60px] h-[63px] sm:min-w-[112px] sm:h-[63px] md:min-w-[132px] md:h-[73px] lg:min-w-[132px] lg:h-[93px] xl:min-w-[224px] xl:h-[126px] border border-[#E4E4EBCC/80] rounded-[16px] flex-shrink-0"
+              className="bg-[#E6E6E61A] min-w-[60px] h-[123px] sm:min-w-[112px] sm:h-[123px] md:min-w-[132px] md:h-[123px] lg:min-w-[172px] lg:h-[133px] xl:min-w-[224px] xl:h-[126px] border border-[#E4E4EBCC/80] rounded-[16px] flex-shrink-0"
             ></div>
           ))}
       </div>
@@ -22,20 +22,20 @@ const HeaderCards = () => {
           .map((_, index) => (
             <div
               key={`row2-left-card${index}`}
-              className="bg-[#E6E6E61A] min-w-[60px] h-[63px] sm:min-w-[112px] sm:h-[63px] md:min-w-[132px] md:h-[73px] lg:min-w-[132px] lg:h-[93px] xl:min-w-[224px] xl:h-[126px] border border-[#E4E4EBCC/80] rounded-[16px] flex-shrink-0"
+              className="bg-[#E6E6E61A] min-w-[60px] h-[123px] sm:min-w-[112px] sm:h-[123px] md:min-w-[132px] md:h-[123px] lg:min-w-[172px] lg:h-[133px] xl:min-w-[224px] xl:h-[126px] border border-[#E4E4EBCC/80] rounded-[16px] flex-shrink-0"
             ></div>
           ))}
         {Array(3)
           .fill(null)
           .map((_, index) => (
-            <div key={`row2-empty-card${index}`} className="min-w-[60px] h-[63px] sm:min-w-[112px] sm:h-[63px] md:min-w-[132px] md:h-[73px] lg:min-w-[132px] lg:h-[93px] xl:min-w-[224px] xl:h-[126px] flex-shrink-0"></div>
+            <div key={`row2-empty-card${index}`} className="min-w-[60px] h-[123px] sm:min-w-[112px] sm:h-[123px] md:min-w-[132px] md:h-[123px] lg:min-w-[172px] lg:h-[133px] xl:min-w-[224px] xl:h-[126px] flex-shrink-0"></div>
           ))}
         {Array(2)
           .fill(0)
           .map((_, index) => (
             <div
               key={`row2-right-card${index}`}
-              className="bg-[#E6E6E61A] min-w-[60px] h-[63px] sm:min-w-[112px] sm:h-[63px] md:min-w-[132px] md:h-[73px] lg:min-w-[132px] lg:h-[93px] xl:min-w-[224px] xl:h-[126px] border border-[#E4E4EBCC/80] rounded-[16px] flex-shrink-0 relative right-[-70px]"
+              className="bg-[#E6E6E61A] min-w-[60px] h-[123px] sm:min-w-[112px] sm:h-[123px] md:min-w-[132px] md:h-[123px] lg:min-w-[172px] lg:h-[133px] xl:min-w-[224px] xl:h-[126px] border border-[#E4E4EBCC/80] rounded-[16px] flex-shrink-0 relative right-[-70px]"
             ></div>
           ))}
       </div>
@@ -47,20 +47,20 @@ const HeaderCards = () => {
           .map((_, index) => (
             <div
               key={`row3-left-card${index}`}
-              className="bg-[#E6E6E61A] min-w-[60px] h-[63px] sm:min-w-[112px] sm:h-[63px] md:min-w-[132px] md:h-[73px] lg:min-w-[132px] lg:h-[93px] xl:min-w-[224px] xl:h-[126px] border border-[#E4E4EBCC/80] rounded-[16px] flex-shrink-0"
+              className="bg-[#E6E6E61A] min-w-[60px] h-[123px] sm:min-w-[112px] sm:h-[123px] md:min-w-[132px] md:h-[123px] lg:min-w-[172px] lg:h-[133px] xl:min-w-[224px] xl:h-[126px] border border-[#E4E4EBCC/80] rounded-[16px] flex-shrink-0"
             ></div>
           ))}
         {Array(3)
           .fill(null)
           .map((_, index) => (
-            <div key={`row3-empty-card${index}`} className="min-w-[60px] h-[63px] sm:min-w-[112px] sm:h-[63px] md:min-w-[132px] md:h-[73px] lg:min-w-[132px] lg:h-[93px] xl:min-w-[224px] xl:h-[126px] flex-shrink-0"></div>
+            <div key={`row3-empty-card${index}`} className="min-w-[60px] h-[123px] sm:min-w-[112px] sm:h-[123px] md:min-w-[132px] md:h-[123px] lg:min-w-[172px] lg:h-[133px] xl:min-w-[224px] xl:h-[126px] flex-shrink-0"></div>
           ))}
         {Array(2)
           .fill(0)
           .map((_, index) => (
             <div
               key={`row3-right-card${index}`}
-              className="bg-[#E6E6E61A] min-w-[60px] h-[63px] sm:min-w-[112px] sm:h-[63px] md:min-w-[132px] md:h-[73px] lg:min-w-[132px] lg:h-[93px] xl:min-w-[224px] xl:h-[126px] border border-[#E4E4EBCC/80] rounded-[16px] flex-shrink-0 relative right-[72px]"
+              className="bg-[#E6E6E61A] min-w-[60px] h-[123px] sm:min-w-[112px] sm:h-[123px] md:min-w-[132px] md:h-[123px] lg:min-w-[172px] lg:h-[133px] xl:min-w-[224px] xl:h-[126px] border border-[#E4E4EBCC/80] rounded-[16px] flex-shrink-0 relative right-[72px]"
             ></div>
           ))}
       </div>
@@ -72,7 +72,7 @@ const HeaderCards = () => {
           .map((_, index) => (
             <div
               key={`row4-card${index}`}
-              className="bg-[#E6E6E61A] min-w-[60px] h-[63px] sm:min-w-[112px] sm:h-[63px] md:min-w-[132px] md:h-[73px] lg:min-w-[132px] lg:h-[93px] xl:min-w-[224px] xl:h-[126px] border border-[#E4E4EBCC/80] rounded-[16px] flex-shrink-0"
+              className="bg-[#E6E6E61A] min-w-[60px] h-[123px] sm:min-w-[112px] sm:h-[123px] md:min-w-[132px] md:h-[123px] lg:min-w-[172px] lg:h-[133px] xl:min-w-[224px] xl:h-[126px] border border-[#E4E4EBCC/80] rounded-[16px] flex-shrink-0"
             ></div>
           ))}
       </div>

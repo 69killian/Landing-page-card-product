@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Cards from './components/Cards.jsx';
 import Footer from './components/Footer.jsx';
-import Header from './components/Header.jsx';
+import Hero from './components/Hero.jsx';
 import Filters from './components/Filters.jsx';
 
 
@@ -39,7 +39,7 @@ export default function App() {
   return (
     <>
     <div className='flex justify-center'>
-<Header />
+<Hero />
 </div>
       <div className="App flex justify-center items-center">
         <div className="relative overflow-hidden pb-[150px]">
