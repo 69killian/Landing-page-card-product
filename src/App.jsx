@@ -4,7 +4,6 @@ import Footer from './components/Footer.jsx';
 import Hero from './components/Hero.jsx';
 import Filters from './components/Filters.jsx';
 
-
 export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [filter, setFilter] = useState('All Challenges');
@@ -33,21 +32,22 @@ export default function App() {
         (filter === 'Free' && !card.premium);
       return matchesSearch && matchesFilter;
     });
-    setFilteredCardData(filtered); // Maj des cartes filtrées
-  }, [searchQuery, filter, cardData]); // Réagi aux changements de `searchQuery`, `filter` ou `cardData`
+    setFilteredCardData(filtered); // Met à jour les cartes filtrées
+  }, [searchQuery, filter, cardData]);
 
   return (
     <>
-    <div className='flex justify-center'>
-<Hero />
-</div>
+      {/* Pass searchQuery and setSearchQuery to Hero */}
+      <div className="flex justify-center items-center">
+        <Hero 
+          searchQuery={searchQuery} 
+          setSearchQuery={setSearchQuery} 
+        />
+      </div>
+
       <div className="App flex justify-center items-center">
         <div className="relative overflow-hidden pb-[150px]">
-          
-          <Filters 
-            setSearchQuery={setSearchQuery}
-            setFilter={setFilter}
-          />
+          <Filters setSearchQuery={setSearchQuery} setFilter={setFilter} />
           {filteredCardData.length === 0 ? (
             <div className="text-center mt-20 mb-20 text-[40px]">
               <p>Sorry :/ <br /> We don't have this challenge</p>
