@@ -62,7 +62,6 @@ export default function App() {
                   cardImageAlt={card.cardImageAlt}
                   title={card.title}
                   description={card.description}
-                  buttonText={card.buttonText}
                   premium={card.premium}
                   free={card.free}
                 />

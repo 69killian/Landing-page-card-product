@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Tooltip from './Tooltip';
 import points from '../assets/points.svg';
-import sword from '../assets/swordicon.png';
+import download from '../assets/download.svg';
 
 // Composant Cards
 const Cards = ({ cardId, cardImage, cardImageAlt, title, description, buttonText, premium, free, updateTitle, openModal }) => {
@@ -61,9 +61,9 @@ const Cards = ({ cardId, cardImage, cardImageAlt, title, description, buttonText
           <p className="text-[12.28px] font-normal text-[#090C1580]">{description}</p>
 
           <div className="flex flex-cols-2 justify-between items-center mt-auto relative">
-            <button className="font-inter font-medium text-[14.78px] flex items-center justify-center gap-2 border border-solid rounded-[9.83px] w-[156px] h-[35px] relative bg-white">
-              <img src={sword} alt="sword" className="w-[16px] h-[16px]" />
-              {buttonText}
+            <button className="font-inter font-medium text-[14.78px] flex items-center justify-center gap-2 border border-solid rounded-[9.83px] w-[127px] h-[35px] relative bg-white">
+              <img src={download} alt="download" />
+              Télécharger
             </button>
 
             <button
