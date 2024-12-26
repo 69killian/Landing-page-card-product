@@ -24,7 +24,7 @@ const Cards = ({ cardId, cardImage, cardImageAlt, title, description, buttonText
   const handleClickOutside = (event) => {
     if (
       !event.target.closest('.tooltip-container') && // Vérifie si le clic est hors du tooltip
-      !event.target.closest('.points-button') // Vérifie si le clic est hors du bouton `points`
+      !event.target.closest('.points-button') // Vérifie si le clic est hors du bouton points
     ) {
       setIsTooltipVisible(false);
     }

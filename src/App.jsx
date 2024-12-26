@@ -4,6 +4,7 @@ import Footer from './components/Footer.jsx';
 import Hero from './components/Hero.jsx';
 import Filters from './components/Filters.jsx';
 import Pagination from './components/Pagination.jsx';
+import WalifyFooter from './components/WalifyFooter.jsx';
 
 export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -47,7 +48,7 @@ export default function App() {
       </div>
 
       <div className="App flex justify-center items-center">
-        <div className="relative overflow-hidden pb-[150px] px-10">
+        <div className="relative overflow-hidden pb-[20px] px-10">
           <Filters setSearchQuery={setSearchQuery} setFilter={setFilter} />
           {filteredCardData.length === 0 ? (
             <div className="text-center mt-20 mb-20 text-[40px]">
@@ -71,8 +72,10 @@ export default function App() {
           )}
           <Pagination/>
           <Footer />
+          
         </div>
       </div>
+      <WalifyFooter/>
     </>
   );
 }

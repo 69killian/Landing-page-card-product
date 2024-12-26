@@ -6,7 +6,7 @@ const Pagination = () => {
   return (
     <>
 
-    <div className='flex justify-between items-center px-4 py-20'>
+    <div className='flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row justify-between items-center px-4 py-20'>
 
     <div className='flex text-[14px] gap-5 flex items-center'>
     <div className='text-[#252525B2]'>Total par page</div>
