@@ -3,6 +3,7 @@ import Cards from './components/Cards.jsx';
 import Footer from './components/Footer.jsx';
 import Hero from './components/Hero.jsx';
 import Filters from './components/Filters.jsx';
+import Pagination from './components/Pagination.jsx';
 
 export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -68,6 +69,7 @@ export default function App() {
               ))}
             </div>
           )}
+          <Pagination/>
           <Footer />
         </div>
       </div>
