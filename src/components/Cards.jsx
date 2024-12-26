@@ -18,22 +18,22 @@ const Cards = ({ cardId, cardImage, cardImageAlt, title, description, buttonText
   }, []);
 
   const handleTooltipToggle = () => {
-    setIsTooltipVisible((prevState) => !prevState);
+    setIsTooltipVisible((prevState) => !prevState); // Bascule l’état du tooltip
   };
 
   const handleClickOutside = (event) => {
-    if (event.target.closest('.tooltip-container') === null) {
+    if (
+      !event.target.closest('.tooltip-container') && // Vérifie si le clic est hors du tooltip
+      !event.target.closest('.points-button') // Vérifie si le clic est hors du bouton `points`
+    ) {
       setIsTooltipVisible(false);
     }
   };
-
 
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
-
-
 
   return (
     <>
@@ -67,8 +67,8 @@ const Cards = ({ cardId, cardImage, cardImageAlt, title, description, buttonText
             </button>
 
             <button
-              className="flex items-center justify-center border border-solid rounded-[9.83px] w-[36px] h-[36px] relative bg-white ease-in-out hover:shadow-[2px_2px_0px_rgba(0,0,0,0.2)] focus:outline focus:outline-2 focus:outline-offset-2"
-              onClick={() => setIsTooltipVisible(true)}  // Ouvre le tooltip
+              className="points-button flex items-center justify-center border border-solid rounded-[9.83px] w-[36px] h-[36px] relative bg-white ease-in-out hover:shadow-[2px_2px_0px_rgba(0,0,0,0.2)] focus:outline focus:outline-2 focus:outline-offset-2"
+              onClick={handleTooltipToggle} // Bascule le tooltip
             >
               <img src={points} alt="points" />
             </button>
@@ -87,7 +87,7 @@ const Cards = ({ cardId, cardImage, cardImageAlt, title, description, buttonText
               closeTooltip={() => setIsTooltipVisible(false)}
               cardId={cardId}
               currentTitle={localTitle}
-              openModal={() => openModal(cardId, localTitle)}  // Ouvre le modal
+              openModal={() => openModal(cardId, localTitle)} // Ouvre le modal
             />
           </motion.div>
         )}
@@ -95,6 +95,5 @@ const Cards = ({ cardId, cardImage, cardImageAlt, title, description, buttonText
     </>
   );
 };
-
 
 export default Cards;
