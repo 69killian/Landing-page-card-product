@@ -1,7 +1,7 @@
 { "cardData" : [
     {
         "id": 1,
-      "cardImage": "./Frame 2(1).svg",
+      "cardImage": "./images/Frame 2(1).svg",
       "cardImageAlt": "Raycast Wallpaper #1",
       "title": "Raycast",
       "description": "Recreate this wallpaper using AI.",
@@ -10,7 +10,7 @@
     },
     {
         "id": 2,
-      "cardImage": "./Frame 2(2).svg",
+      "cardImage": "./images/Frame 2(2).svg",
       "cardImageAlt": "Raycast Wallpaper #2",
       "title": "Aurora Borealis",
       "description": "Un paysage magique de lumières célestes.",
@@ -19,7 +19,7 @@
     },
     {
         "id": 3,
-      "cardImage": "./Frame 2(3).svg",
+      "cardImage": "./images/Frame 2(3).svg",
       "cardImageAlt": "Raycast Wallpaper #3",
       "title": "Montagnes Mystiques",
       "description": "Des sommets enneigés enveloppés de mystère.",
@@ -28,7 +28,7 @@
     },
     {
         "id": 4,
-      "cardImage": "./Frame 2(4).svg",
+      "cardImage": "./images/Frame 2(4).svg",
       "cardImageAlt": "Raycast Wallpaper #4",
      "title": "Forêt Enchantée",
       "description": "Un lieu féérique ou règnent les esprits de la nature.",
@@ -37,34 +37,33 @@
     },
     {
         "id": 5,
-      "cardImage": "./Frame 2(5).svg",
+      "cardImage": "./images/Frame 2(5).svg",
       "cardImageAlt": "Raycast Wallpaper #5",
       "title": "Coucher de Soleil Doré",
       "description": "Un spectacle chalereux dans le ciel.",
       "premium": false,
       "free": true
-    },
-    {
-        "id": 6,
-      "cardImage": "./Frame 2(6).svg",
-      "cardImageAlt": "Raycast Wallpaper #6",
-      "title": "Océan Serein",
-      "description": "Les vagues caressent la plage sous un ciel paisible.",
-      "premium": false,
-      "free": true
+    },{
+      "id": 6,
+    "cardImage": "./images/Frame 2(6).svg",
+    "cardImageAlt": "Raycast Wallpaper #6",
+    "title": "Océan Serein",
+    "description": "Les vagues caressent la plage sous un ciel paisible.",
+    "premium": false,
+    "free": true
     },
     {
       "id": 7,
-    "cardImage": "./Frame 2(7).svg",
+    "cardImage": "./images/Frame 2(7).svg",
     "cardImageAlt": "Raycast Wallpaper #7",
-   "title": "Jardin de Sakura",
+  "title": "Jardin de Sakura",
     "description": "Les cerisiers en fleurs peignent un tableau rose éclatant.",
     "premium": true,
     "free": false
   },
   {
       "id": 8,
-    "cardImage": "./Frame 2(8).svg",
+    "cardImage": "./images/Frame 2(8).svg",
     "cardImageAlt": "Raycast Wallpaper #8",
     "title": "Galaxie Infinie",
     "description": "Un voyage cosmique à travers un univers sans fin.",
@@ -73,7 +72,7 @@
   },
   {
       "id": 9,
-    "cardImage": "./Frame 2(9).svg",
+    "cardImage": "./images/Frame 2(9).svg",
     "cardImageAlt": "Raycast Wallpaper #9",
     "title": "Chute d'eau Majestueuse",
     "description": "Une cascade impressionnante et puissante.",

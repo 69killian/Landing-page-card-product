@@ -14,7 +14,8 @@ export default function App() {
 
   // Charge les données depuis le fichier JSON
   useEffect(() => {
-    fetch("cardData.json")
+    
+    fetch("https://res.cloudinary.com/dqhasw8vf/raw/upload/v1735289529/cardData_qb4kmf.json")
       .then(response => response.json())
       .then(data => {
         setCardData(data.cardData); // Charge toutes les données
@@ -39,6 +40,8 @@ export default function App() {
 
   return (
     <>
+    
+
       {/* Pass searchQuery and setSearchQuery to Hero */}
       <div className="flex justify-center items-center">
         <Hero 
@@ -46,6 +49,7 @@ export default function App() {
           setSearchQuery={setSearchQuery} 
         />
       </div>
+      
 
       <div className="App flex justify-center items-center">
         <div className="relative overflow-hidden pb-[20px] px-10">
@@ -54,6 +58,7 @@ export default function App() {
             <div className="text-center mt-20 mb-20 text-[40px]">
               <p>Sorry :/ <br /> We don't have this challenge</p>
             </div>
+            
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-[14.74px] mt-10 px-4">
               {filteredCardData.map((card) => (

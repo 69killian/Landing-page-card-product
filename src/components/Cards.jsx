@@ -44,7 +44,10 @@ const Cards = ({ cardId, cardImage, cardImageAlt, title, description, buttonText
           transition-all duration-200 ease-in-out
          `}
         >
-          <img src={cardImage} alt={cardImageAlt} />
+          <img
+            src={cardImage}
+            alt={cardImageAlt}
+          />
 
           <div className="flex flex-cols-2 justify-between items-center">
             <p className="font-inter font-medium text-[17.2px] my-[11.98px]">
