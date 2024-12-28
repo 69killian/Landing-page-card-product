@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# (FR) Walify - Landing Page Picture Cards 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image du projet](screen.png)
 
-## Available Scripts
 
-In the project directory, you can run:
+[![Démo en ligne](https://img.shields.io/badge/Démo%20en-ligne-blue)](https://landing-page-card-product.vercel.app/)
 
-### `npm start`
+Bienvenue dans le **Walify - Landing Page Picture Cards** ! Réalisé dans le cadre de la communauté Spikes Challenge, ce projet a été l'occasion de me revoir toutes mes erreurs comises dans le challenge précédent des cards, tout en renforçant mes compétences pratiques en améliorant le projet avec une landing page totalement responsive.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎯 **Objectifs**
 
-### `npm test`
+- Pratiquer **React** pour la création de composants dynamiques
+- Explorer les possibilités de **Tailwind** en matière de Responsive
+- Implémenter des fonctionnalités interactives pour enrichir l'expérience utilisateur
+- Améliorer les fonctionnalités précédentes (filtres, création des cards, animations...)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ✨ **Fonctionnalités**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Filtrage des produits** : 
+  - **Par nom** : Barre de recherche qui filtre les produits en dynamique sans rechargement de page
+  - **Par type** : Filtre des produits en fonction de leur statut premium ou free
+- **Animations** : Animations fluides pour l'apparition et la mise à jour des produits (plus d'apparitiobn en Math random)
+- **Réinitialisation des filtres** :
+  - Un bouton permet de **supprimer tous les filtres** appliqués pour afficher à nouveau la liste complète des produits
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ **Technos Utilisées**
 
-### `npm run eject`
+- **React.js** : La gestion de l'état et la création des composants
+- **Tailwind** : Pour un stylisme rapide et responsive des cards
+- **Vercel** : Déploiement sur l'écosystème gratuit
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
+<br><br><br><br><br><br><br><br><br><br>
+# (EN) Walify - Landing Page Picture Cards 🚀
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[![Deployed Site Link](https://img.shields.io/badge/Visit-Deployed%20Site-blue)](https://landing-page-card-product.vercel.app/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Welcome to **Walify - Landing Page Picture Cards**!  
+Created as part of the **Spikes Challenge** community, this project gave me the opportunity to revisit all the mistakes I made during the previous card challenge, while strengthening my practical skills by enhancing the project with a fully responsive landing page.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🎯 **Objectives**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Practice **React** to create dynamic and reusable components.  
+- Explore the possibilities of **Tailwind CSS** for responsive design.  
+- Implement interactive features to enrich the user experience.  
+- Improve previous functionalities (filters, card creation, animations, etc.).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## ✨ **Features**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Product Filtering**:  
+  - **By Name**: A search bar that dynamically filters products without reloading the page.  
+  - **By Type**: Filters products based on their status (premium or free).  
 
-### Analyzing the Bundle Size
+- **Smooth Animations**:  
+  - Seamless animations for product appearance and updates, avoiding random effects.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Filter Reset**:  
+  - A convenient button to **clear all applied filters** and display the full product list again.  
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## ⚙️ **Technologies Used**
 
-### Advanced Configuration
+- **React.js**: For state management and the creation of dynamic components.  
+- **Tailwind CSS**: For rapid styling and responsive card design.  
+- **Vercel**: For deployment on a free, fast, and modern hosting platform.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
