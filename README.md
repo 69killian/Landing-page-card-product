@@ -1,6 +1,6 @@
 # (FR) Walify - Landing Page Picture Cards 🚀
 
-![image du projet](screen.png)
+![image du projet](cards.png)
 
 
 [![Démo en ligne](https://img.shields.io/badge/Démo%20en-ligne-blue)](https://landing-page-card-product.vercel.app/)
