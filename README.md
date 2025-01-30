@@ -1,4 +1,4 @@
-# (FR) Walify - Landing Page Picture Cards 🚀
+# (FR) Wallify - Landing Page Picture Cards 🚀
 
 ![image du projet](cards.png)
 
